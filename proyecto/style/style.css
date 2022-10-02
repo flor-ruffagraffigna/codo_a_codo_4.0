@@ -1,0 +1,27 @@
+
+.sec{
+    display: flex;
+    justify-content: flex-end;
+    height: 800px;
+    align-items: center;
+}
+
+section{
+    background-image: url(../images/ba1.jpg);
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+}
+
+.nav-link{
+    color: rgb(196, 187, 187);
+}
+
+
+footer{
+    bottom: 0px;
+    margin-bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+ 
+}
