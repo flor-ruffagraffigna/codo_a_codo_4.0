@@ -19,7 +19,7 @@
 	
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	try{
-		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compratickets", "root", "");
+		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compra_ticket", "root", "");
 		Statement stm = cn.createStatement();
 		int valor = 1;
 		ResultSet rsId = stm.executeQuery("SELECT MAX(id) FROM ticket");
