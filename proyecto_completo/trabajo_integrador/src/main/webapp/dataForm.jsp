@@ -19,7 +19,7 @@
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	
 	try{
-		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compratickets", "root", "");
+		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compra_ticket", "root", "");
 		Statement stm = cn.createStatement();
 		stm.executeUpdate("INSERT INTO ticket(nombre, apellido, mail, cantidad, categoria) VALUES('"+nombre+"','"+apellido+"','"+mail+"','"+cantidad+"','"+categoria+"')");
 	} catch(Exception e){
