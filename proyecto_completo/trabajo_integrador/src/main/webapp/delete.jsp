@@ -14,7 +14,7 @@
 	Class.forName("com.mysql.cj.jdbc.Driver");
 
 	try{
-		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compratickets", "root", "");
+		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/compra_ticket", "root", "");
 		Statement stm = cn.createStatement();
 		stm.executeUpdate("UPDATE ticket SET confirmacionCompra='1' WHERE id=(SELECT MAX(id) FROM ticket)");//si cancelan la compra, la confirmacion pasa a FALSE
 	} catch(Exception e){
